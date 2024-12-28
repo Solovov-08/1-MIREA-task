@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Fun weather</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container header">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo animated fadeInDown">
+                        <h3>SMARThome</h3>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <nav>
+                        <ul class="menu animated fadeInDown">
+                            <li class="menu__item">
+                                <a href="#">Дом</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Подробнее</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Установить</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="burger__menu hidden">
+                        <input type="checkbox" id="check-menu">
+                        <label class="burger__label" for="check-menu">
+                        <h3>FUN WEATHER.</h3>
+                        </label>
+                        <div class="burger__line first"></div>
+                        <div class="burger__line second"></div>
+                        <div class="burger__line third"></div>
+                        <div class="burger__line fourth"></div>
+                        <nav class="main__menu">
+                            <div class="burger__menu__item">
+                                <a href="#">Дом</a>
+                            </div>
+                            <div class="burger__menu__item">
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <div class="burger__menu__item">
+                                <a href="#">Отзывы</a>
+                            </div>
+                            <div class="burger__menu__item">
+                                <a href="#">Установить</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="social animated fadeInDown">
+                        <a href="#">
+                            <img src="img/fb-icon.png" alt="fb-icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/insta-icon.png" alt="insta-icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/twitter-icon.png" alt="insta-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h1 class="main__title animated fadeInLeft">Лучший помошник с умным домом</h1>
+                        <div class="main__text animated fadeInLeft">Ваш дом под полным контролем, где бы вы ни находились.</div>
+                        <div class="btn-block animated fadeInLeft">
+                            <button type="submit" class="btn btn-download">Установить</button>
+                            <button type="submit" class="btn btn-features">Подробнее</button>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2 col-2 col-md-push-3">
+                        <div class="circle-red animated pulse">
+                            <img src="img/circle-red.png" alt="">
+                        </div>
+                        <div class="scroll">
+                            <a class="go_to" href="#features">
+                                <img src="img/scroll.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-3 col-md-pull-2">
+                        <div class="phone animated pulse">
+                            <img src="img/phone2.png" alt="phone">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="circle-white animated pulse">
+                            <img src="img/circle-white.png" alt="">
+                        </div>
+                        <div class="circle-navy animated pulse">
+                            <img src="img/circle-navy.png" alt="">
+                        </div>
+                        <div class="circle-yellow animated pulse">
+                            <img src="img/circle-yellow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center"> <!-- так как элемент распололжен по центру(во всю строку) -->
+                    <div class="features">
+                        <h2 class="features__title" id="features">
+                            Восхитительные возможности
+                        </h2>
+                        <p class="features__text">
+                            Только необходимое</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-4">
+                    <div class="feature__item d-flex"> <!-- Контент разбивается на 2 столбика и делается через флексы внутри бустрап -->
+                        <i class="feature__icon">
+                            <img src="img/feature-icon1.png" alt="">
+                        </i> <!-- 1 элемент -->
+                        <div class="feature__block"> <!-- 2 элемент, внутри которого еще 2 эл-та -->
+                            <h3 class="feature__title">
+                                Удобство
+                            </h3>
+                            <p class="feature__text">
+                                Иногда самые простые вещи найти сложнее всего. Поэтому мы создали новый подход к вашему дому для повседневной жизни.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature__item d-flex"> <!-- Контент разбивается на 2 столбика и делается через флексы внутри бустрап -->
+                        <i class="feature__icon">
+                            <img src="img/feature-icon2.png" alt="">
+                        </i> <!-- 1 элемент -->
+                        <div class="feature__block"> <!-- 2 элемент, внутри которого еще 2 эл-та -->
+                            <h3 class="feature__title">
+                                Многослойная система
+                            </h3>
+                            <p class="feature__text">
+                                Наше приложение объединяет все функции в единую многослойную систему. Управляйте каждым устройством и процессом поэтапно — от базовых настроек до сложных сценариев.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature__item d-flex"> <!-- Контент разбивается на 2 столбика и делается через флексы внутри бустрап -->
+                        <i class="feature__icon">
+                            <img src="img/feature-icon3.png" alt="">
+                        </i> <!-- 1 элемент -->
+                        <div class="feature__block"> <!-- 2 элемент, внутри которого еще 2 эл-та -->
+                            <h3 class="feature__title">
+                                Микроклимат в каждой комнате
+                            </h3>
+                            <p class="feature__text">
+                                Настраивайте идеальные условия в каждом уголке дома. Контролируйте температуру, влажность и вентиляцию в каждой комнате, создавая комфортный микроклимат для всех членов семьи.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center"> <!-- так как элемент распололжен по центру(во всю строку) -->
+                    <div class="widgets">
+                        <h2 class="features__title">
+                           Удобные виджеты
+                        </h2>
+                        <p class="features__text">
+                            Устанавливайте как угодно</p>
+                    </div>
+                </div>
+                <div class="carousel__cont">
+                    <div class="carousel">
+                        <img src="img/slider-center.png" alt="Image 1" />
+                        <img src="img/slider-right.png" alt="Image 2" />
+                        <img src="img/slider-left.png" alt="Image 3" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center"> <!-- так как элемент распололжен по центру(во всю строку) -->
+                    <div class="screenshots__title">
+                        <h2 class="features__title">
+                            Скриншоты
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="screenshot__left">
+                        <img src="img/screenshots/cloudy.png" alt="cloudy-screen">
+                    </div>
+                </div>
+                <div class="col-lg-6 mr-auto">
+                    <div class="screenshots__block_r">
+                        <div class="scrn__icon">
+                            <img src="img/screenshots/cloudy-icon.png" alt="">
+                        </div>
+                        <div class="scrn__title">
+                            <h2>В прохладу</h2>
+                        </div>
+                        <div class="scrn__text_r">
+                            Автоматическое регулирование увлажнителя и кондиционера для создания комфортного воздуха в доме. Наслаждайтесь идеальным микроклиматом
+                        </div>
+                        <div class="scrn__degrees">
+                            <img src="img/screenshots/degrees.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 d-flex justify-content-start">
+                    <div class="screenshots__block_l">
+                        <div class="scrn__icon">
+                            <img src="img/screenshots/sun-icon.png" alt="">
+                        </div>
+                        <div class="scrn__title">
+                            <h2>В жаркие дни</h2>
+                        </div>
+                        <div class="scrn__text_l">
+                            Пусть солнце сияет, но температура остаётся под контролем. Настраивайте кондиционер и шторы, чтобы сохранять прохладу и комфорт в доме в солнечные дни.</div>
+                        <div class="scrn__degrees">
+                            <img src="img/screenshots/degrees.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-flex justify-content-center">
+                    <div class="screenshot__right">
+                        <img src="img/screenshots/sunny.png" alt="cloudy-screen">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="screenshot__left screenshot__rainy">
+                        <img src="img/screenshots/rainy.png" alt="cloudy-screen">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="screenshots__block_dr">
+                        <div class="scrn__icon">
+                            <img src="img/screenshots/rainy-icon.png" alt="">
+                        </div>
+                        <div class="scrn__title">
+                            <h2>Когда дождь</h2>
+                        </div>
+                        <div class="scrn__text_l">
+                            Автоматические сценарии позаботятся о вашем комфорте: окна закроются сами, обогрев включится, а освещение создаст уютную атмосферу</div>
+                        <div class="scrn__degrees">
+                            <img src="img/screenshots/degrees.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center"> <!-- так как элемент распололжен по центру(во всю строку) -->
+                    <div class="reviews">
+                        <h2 class="features__title">
+                            Что говорят люди
+                        </h2>
+                        <p class="features__text">
+                            Отзывы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-6">
+                    <div class="quote__block_up">
+                        <div class="commas commas__up">
+                            “
+                        </div>
+                        <div class="quote">
+                            Умный дом — это просто находка! Управляю температурой и светом, даже когда меня нет дома. Очень удобно!
+                        </div>
+                        <div class="quote__author">
+                            Алексей Мельников
+                        </div>
+                        <div class="commas commas__down">
+                            “
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="quote__block_up">
+                        <div class="commas commas__up">
+                            “
+                        </div>
+                        <div class="quote">
+                            Раньше сложно было создать комфорт в каждой комнате, теперь с приложением всё настраивается автоматически. Очень нравится, как работает с климатом.
+                        </div>
+                        <div class="quote__author">
+                            Марина Ковалева
+                        </div>
+                        <div class="commas commas__down">
+                            “
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row  d-flex justify-content-between">
+                <div class="col-lg-6">
+                    <div class="quote__block_down">
+                        <div class="commas commas__up">
+                            “
+                        </div>
+                        <div class="quote">
+                            Включение обогрева и закрытие окон перед дождём — это просто чудо! Настоящий помощник для дома, особенно в непредсказуемую погоду.
+                        </div>
+                        <div class="quote__author">
+                            Игорь Сергеев
+                        </div>
+                        <div class="commas commas__down">
+                            “
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="quote__block_down">
+                        <div class="commas commas__up">
+                            “
+                        </div>
+                        <div class="quote">
+                            Люблю управлять светом и настройками через смартфон! Быстро, удобно и действительно делает жизнь проще.
+                        </div>
+                        <div class="quote__author">
+                            Екатерина Смирнова
+                        </div>
+                        <div class="commas commas__down">
+                            “
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__download">
+        <div class="container">
+            <div class="row d-flex justify-content-start">
+                <div class="col-lg-6 mr-auto">
+                    <div class="download__title">
+                       Как загрузить приложение?
+                    </div>
+                    <div class="download__text">
+                        Просто скачайте приложение из магазина.<br>
+                        Простое красивое и удобное приложение для умного дома.
+                    </div>
+                    <div class="download__btn">
+                        <a href="#">
+                            <img src="img/download/download-appstore.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/download/download-google.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo__footer">
+                        <h3>SMART<span>home
+                        </span></h3>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <nav>
+                        <ul class="menu__footer">
+                            <li class="menu__item">
+                                <a href="#">Дом</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Подробнее</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Установить</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                    <div class="social__footer">
+                        <a href="#">
+                            <img src="img/footer/footer-fb.png" alt="fb-icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/footer-inst.png" alt="insta-icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/footer-tw.png" alt="tw-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="copyright">
+                        © 2024 Все права защищены.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow">
+            <a class="arrow__link go_to" href="#header">
+                <img src="img/footer/arrow.png" alt="">
+            </a>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
